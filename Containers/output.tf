@@ -5,4 +5,5 @@ output "container_name" {
 output "container_ip" {
   value       = docker_container.nodered_container.network_data[0].ip_address
   description = "Container Ip Address"
+  sensitive   = true
 }
